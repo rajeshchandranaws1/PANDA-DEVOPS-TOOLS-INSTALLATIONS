@@ -4,4 +4,5 @@ sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
 sudo yum install -y apache-maven
 sudo yum install java-1.8.0-devel -y
 sudo /usr/sbin/alternatives --config java
+sudo /usr/sbin/alternatives --config javac
 # (When prompted, enter the number for Java 1.8)
