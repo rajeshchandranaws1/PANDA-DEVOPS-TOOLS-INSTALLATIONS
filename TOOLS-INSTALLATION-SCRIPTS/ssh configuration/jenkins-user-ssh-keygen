@@ -1,0 +1,29 @@
+Run as root
+------------------
+ssh-keygen -t rsa
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+chmod og-wx ~/.ssh/authorized_keys 
+ssh localhost
+exit  (to get back to root user)
+su -s /bin/bash jenkins
+
+
+in jenkins user bash
+---------------------  
+ssh-keygen -t rsa
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+chmod og-wx ~/.ssh/authorized_keys
+ssh localhost
+
+
+Logged in as jenkins
+-------------------------
+cat /var/lib/jenkins/.ssh/known_hosts
+
+Copy key from id_rsa.pub
+Exit from bash back to root user
+
+ssh localhost
+vi .ssh/authorized_keys
+Paste the key
+exit
