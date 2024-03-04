@@ -1,1 +1,13 @@
+# Ubuntu (java 8)
 
+sudo apt-get install openjdk-8-jdk -y
+sudo update-alternatives --config java
+sudo update-alternatives --config javac
+
+# AmazonLinux 
+
+# (java 17)
+sudo yum install java-17 -y
+# (java 8)
+sudo yum install java-1.8.0-devel -y
+  
