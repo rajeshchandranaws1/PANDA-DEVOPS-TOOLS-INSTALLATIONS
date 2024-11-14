@@ -23,3 +23,11 @@ service httpd start
 service httpd status
 chkconfig httpd on
 echo "MYSERVER" > /var/www/html/index.html
+
+==============================================
+# Installing Tomcat in Amazon Linux 2 (WebServer)
+==============================================
+https://tomcat.apache.org/download-90.cgi
+wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.97/bin/apache-tomcat-9.0.97.tar.gz
+mv apache-tomcat-9.0.97 tomcat
+Execute startup.sh under the tomcat/bin folder
